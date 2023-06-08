@@ -12,8 +12,8 @@ while linea != '':
     valores.append(valor)
     linea = ent.readline().rstrip('\n')
 ent.close()
-plt.plot(fechas, valores)
-plt.title("Valor del dolar")
+plt.title("Valor dolar")
+plt.plot(valores)
 plt.show()
 
 
