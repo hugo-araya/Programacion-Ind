@@ -30,7 +30,6 @@ while i < largo:
 promedio = suma / cont
 meses.append('Enero')
 pesos.append(promedio)
-print(meses, pesos)
 
 #Promedio para Febrero
 i = 0
@@ -44,7 +43,6 @@ while i < largo:
 promedio = suma / cont
 meses.append('Febrero')
 pesos.append(promedio)
-print(meses, pesos)
 
 #Promedio para Marzo
 i = 0
@@ -58,7 +56,6 @@ while i < largo:
 promedio = suma / cont
 meses.append('Marzo')
 pesos.append(promedio)
-print(meses, pesos)
 
 #Promedio para Abril
 i = 0
@@ -86,8 +83,9 @@ while i < largo:
 promedio = suma / cont
 meses.append('Mayo')
 pesos.append(promedio)
-print(meses, pesos)
 
+print(meses)
+print(pesos)
 plt.title("Valor promedio mensual del dolar")
 plt.plot(meses, pesos)
 plt.show()
