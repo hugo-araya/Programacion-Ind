@@ -1,5 +1,5 @@
-ent = open("dolar_2022.txt")
-sal = open("dolarsal_2022.txt", "w")
+ent = open("dol_2021.txt")
+sal = open("dolarsal_2021.txt", "w")
 
 linea = ent.readline().rstrip('\n')
 while linea != '':

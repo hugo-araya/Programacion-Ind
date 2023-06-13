@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-ent = open("dolarsal_2022.txt")
+ent = open("dolarsal_2021.txt")
 valores = []
 fechas = []
 linea = ent.readline().rstrip('\n')
@@ -88,6 +88,7 @@ pesos.append(promedio)
 i = 0
 cont = 0
 suma = 0
+
 while i < largo:
     if fechas[i][5:7] == "06":
         suma = suma + valores[i]
@@ -135,6 +136,7 @@ while i < largo:
 promedio = suma / cont
 meses.append('Septiembre')
 pesos.append(promedio)
+print(meses, pesos)
 
 #Promedio para Octubre
 i = 0
@@ -161,6 +163,7 @@ while i < largo:
 promedio = suma / cont
 meses.append('Noviembre')
 pesos.append(promedio)
+print(meses, pesos)
 
 #Promedio para Diciembre
 i = 0
@@ -175,12 +178,15 @@ promedio = suma / cont
 meses.append('Diciembre')
 pesos.append(promedio)
 
+
 print(meses)
 print(pesos)
 plt.title("Valor promedio mensual del dolar : 2022")
 plt.xlabel('Meses')
 plt.ylabel('Valores en $')
 plt.grid(True)
-plt.plot(meses, pesos, 'ro--')
-plt.legend(loc="lower right", title="2022", frameon=False)
+plt.plot(meses, pesos, 'g*--')
+plt.legend(loc="lower right", title="2021", frameon=False)
 plt.show()
+
+

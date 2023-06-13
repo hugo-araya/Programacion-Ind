@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-ent = open("dolarsal.txt")
+ent = open("dolarsal_2022.txt")
 valores = []
 fechas = []
 linea = ent.readline().rstrip('\n')
